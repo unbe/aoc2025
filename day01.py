@@ -4,7 +4,7 @@ with open(sys.argv[1], 'r') as f:
   pos = 50
   part1 = 0
   part2 = 0
-  for line in f.readlines():
+  for line in f:
     sign = 1 if line[0] == 'R' else -1
     step = int(line[1:])
     oldpos = pos
